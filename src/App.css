@@ -618,6 +618,10 @@ body {
   transition-duration: 300ms;
 }
 
+.custom-link {
+  color: #0000FF !important;
+}
+
 #thumbnail {
   width: 300px;
   height: 300px;

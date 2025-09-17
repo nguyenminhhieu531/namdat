@@ -15,7 +15,7 @@ function Shipping() {
                     <div className="space-y-2">
                         <p className="text-lg text-gray-700">
                             Số điện thoại mua hàng:{" "}
-                            <a href="tel:0326569346" className="text-blue-600 hover:underline">
+                            <a href="tel:0326569346" className="!text-blue-600 hover:underline custom-link">
                                 0326569346
                             </a>
                         </p>
@@ -23,9 +23,9 @@ function Shipping() {
                             Facebook mua hàng:{" "}
                             <a
                                 href="https://www.facebook.com/viet.dao.10690"
-                                className="text-blue-600 hover:underline"
+                                className="!text-blue-600 hover:underline custom-link"
                                 target="_blank"
-                                rel="noopener noreferrer"
+                                rel="noopener noreferrer" 
                             >
                                 Chi Việt Tú
                             </a>
