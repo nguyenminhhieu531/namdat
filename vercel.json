@@ -16,5 +16,13 @@
       "source": "/(.*)",
       "destination": "/index.html"
     }
+  ],
+    "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://hieubuonnamdat.app/$1",
+      "permanent": true
+    }
   ]
 }
+
