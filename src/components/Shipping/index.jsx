@@ -7,17 +7,12 @@ function Shipping() {
                 <div className="container text-center">
                     
                     {/* Tiêu đề chính */}
-                    <h2 className="pt-6 text-3xl md:text-4xl font-bold text-gray-800 tracking-wide uppercase">
-                        Hiệu buôn Nam Đất
-                    </h2>
-
-                    {/* Mô tả ngắn */}
-                    <p className="mt-3 text-lg italic text-gray-600 max-w-2xl mx-auto">
-                        ( chuyên gốm sứ, nhôm nhựa, thùng xốp, bao bì, bánh tráng, vàng mã ) 
-                    </p>
+                    <div className="text-3xl md:text-4xl font-bold text-gray-800 tracking-wide uppercase">
+                        <img src="/assets/images/logo.png" alt="" className="w-500 h-500 mx-auto"/>
+                    </div>
 
                     {/* Liên hệ */}
-                    <div className="mt-4 space-y-2">
+                    <div className="space-y-2">
                         <p className="text-lg text-gray-700">
                             Số điện thoại mua hàng:{" "}
                             <a href="tel:0326569346" className="text-blue-600 hover:underline">
