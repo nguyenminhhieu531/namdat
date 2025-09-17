@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="qqnQPzVR-Y6PQ7FyCKqMsQY_OMvflRj5jULF42wvQVE" />
+  <meta name="google-site-verification" content="SLUtx1EjDEJ1-sCEV65OecB14o8iGz0Ao7IF8bn_nok" />
+  <title>HIỆU BUÔN NAM ĐẤT</title>
+  <link href="./output.css" rel="stylesheet" />
+  <link rel="icon" href="/favicon.png" sizes="32x32">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <style>
+    .floating-buttons {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 9999;
+    }
+
+    .floating-buttons .btn {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+    }
+
+    .floating-buttons .btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Màu từng nút */
+    .floating-buttons .messenger {
+      background-color: #0084ff;
+    }
+
+    .floating-buttons .phone {
+      background-color: #ff3b30;
+    }
+
+    .floating-buttons .zalo {
+      background-color: #0068ff;
+    }
+
+    .floating-buttons .telegram {
+      background-color: #229ED9;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div> <!-- Các nút nổi -->
+  <div class="floating-buttons">
+    <!-- Messenger -->
+    <a href="https://m.me/viet.dao.10690" target="_blank" class="btn messenger">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="Messenger" />
+    </a>
+    <!-- Phone -->
+    <a href="tel:0326569346" class="btn phone">
+      <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Phone" />
+    </a>
+    <!-- Zalo -->
+    <a href="https://zalo.me/0326569346" target="_blank" class="btn zalo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo" />
+    </a>
+  </div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
