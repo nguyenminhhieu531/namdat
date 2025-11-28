@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HIỆU BUÔN NAM ĐẤT</title>
+  <link rel="icon" href="./public/assets/images/logo.png" sizes="256x256" type="image/png">
+  <link href="./output.css" rel="stylesheet" />
+
+  <style>
+    .floating-buttons {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 9999;
+    }
+
+    .floating-buttons .btn {
+      position: relative;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: visible;
+      /* để vòng tròn tràn ra ngoài */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      color: currentColor;
+    }
+
+    .floating-buttons .btn img {
+      width: 28px;
+      height: 28px;
+      z-index: 3;
+      position: relative;
+    }
+
+    /* Ripple effect chuẩn */
+    .floating-buttons .btn .ripple {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: currentColor;
+      opacity: 0.4;
+      transform: translate(-50%, -50%) scale(1);
+      animation: ripple 3s linear infinite;
+      z-index: 1;
+    }
+
+    .floating-buttons .btn .ripple:nth-child(1) {
+      animation-delay: 0s;
+    }
+
+    .floating-buttons .btn .ripple:nth-child(2) {
+      animation-delay: 1s;
+    }
+
+    .floating-buttons .btn .ripple:nth-child(3) {
+      animation-delay: 2s;
+    }
+
+    @keyframes ripple {
+      0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.4;
+      }
+
+      100% {
+        transform: translate(-50%, -50%) scale(2.8);
+        opacity: 0;
+      }
+    }
+
+    /* Màu từng nút */
+    .floating-buttons .messenger {
+      background-color: #0084ff;
+      color: #0084ff;
+    }
+
+    .floating-buttons .phone {
+      background-color: #ff3b30;
+      color: #ff3b30;
+    }
+
+    .floating-buttons .zalo {
+      background-color: #0068ff;
+      color: #0068ff;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- React sẽ render vô đây -->
+  <div id="root"></div>
+
+  <!-- Các nút nổi -->
+  <div class="floating-buttons">
+    <!-- Messenger -->
+    <a href="https://m.me/viet.dao.10690" target="_blank" class="btn messenger">
+      <span class="ripple"></span>
+      <span class="ripple"></span>
+      <span class="ripple"></span>
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="Messenger" />
+    </a>
+
+    <!-- Phone -->
+    <a href="tel:0326569346" class="btn phone">
+      <span class="ripple"></span>
+      <span class="ripple"></span>
+      <span class="ripple"></span>
+      <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Phone" />
+    </a>
+
+    <!-- Zalo -->
+    <a href="https://zalo.me/0326569346" target="_blank" class="btn zalo">
+      <span class="ripple"></span>
+      <span class="ripple"></span>
+      <span class="ripple"></span>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo" />
+    </a>
+  </div>
+
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
